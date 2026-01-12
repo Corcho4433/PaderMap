@@ -1,0 +1,45 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body, html, #map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png);
+}
+
+/* Estilo para el Floating Action Button (FAB) */
+.fab-locate {
+    position: fixed;
+    bottom: 20px; /* Abajo a la derecha es más ergonómico en móviles */
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #6200ee; /* Color Primario Material */
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,0.2), 
+                0 6px 10px 0 rgba(0,0,0,0.14), 
+                0 1px 18px 0 rgba(0,0,0,0.12);
+    z-index: 1000;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.fab-locate:active {
+    background-color: #3700b3;
+    transform: scale(0.95); /* Efecto de presión */
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+}
